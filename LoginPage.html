@@ -8,25 +8,30 @@
 </head>
 <body>
     <h1>Login Here</h1>
+    <form name="frmRegistration" action="./HomePage.html" method="get" id="frmRegistration" onsubmit=" return login()">
     <center>
         <table>
             <tr>
                 <td>Email:</td>
                 <td>
-                    <input type="Email" name="Email" placeholder="Enter Your Email Here" style="width:218px;">
+                    <input type="email" name="email" id="email" value="" placeholder="Enter Your Email Here" style="width:218px;" >
+                    <span id="isemailValid"></span>
                 </td>
             </tr>
             </tr>
             <tr>
                 <td>Password:</td>
                 <td>
-                    <input type="text" name="Password" placeholder="Enter Your Password Here" style="width:218px;">
+                    <input type="text" name="password" id="password" value="" placeholder="Enter Your Password Here" style="width:218px;" >
+                    <span id="ispasswordValid"></span>
                 </td>
             </tr>
         </tr> 
     </table>
-        <a href="#" class="button">Login</a>
+    <input type="submit" class="button" value="Register">
         <p>Don't have an account? <a href="./Register.html">Register Here</a>.</p>
 </center>
+</form>
+<script src="./app.js"></script>
 </body>
 </html>

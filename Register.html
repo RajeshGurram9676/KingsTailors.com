@@ -7,43 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form name="frmRegistration" action="./HomePage.html" method="get" id="frmRegistration" onsubmit=" return validate()">
     <h1>Register Here</h1>
     <center>
         <table>
             <tr>
                 <td>First Name:</td>
                 <td>
-                    <input type="text" name="FrstName" placeholder="Enter Your First Name Here" style="width:218px;">
+                    <input type="text" name="fname" id="fname" value="" placeholder="Enter Your First Name Here" style="width:218px;">
+                    <span id="isfnameValid"></span>
                 </td>
             </tr>
             <tr>
                 <td>Last Name:</td>
                 <td>
-                    <input type="text" name="Lstname" placeholder="Enter Your Last Name Here" style="width:218px;">
-                </td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td>
-                    <input type="text" name="Password" placeholder="Enter Your Password Here" style="width:218px;">
-                </td>
-            </tr>
-            <tr>
-                <td>Re-Enter Password:</td>
-                <td>
-                    <input type="text" name="Re-Password" placeholder="Re-Enter your Password Here" style="width:218px;">
+                    <input type="text" name="lname" id="lname" value="" placeholder="Enter Your Last Name Here" style="width:218px;">
+                    <span id="islnameValid"></span>
                 </td>
             </tr>
             <tr>
                 <td>Email:</td>
                 <td>
-                    <input type="Email" name="Email" placeholder="Enter Your Email Here" style="width:218px;">
+                    <input type="Email" name="email" id="email" value="" placeholder="Enter Your Email Here" style="width:218px;">
+                    <span id="isemailValid"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="text" name="Password" id="password" value="" placeholder="Enter Your Password Here" style="width:218px;">
+                    <span id="ispasswordValid"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password:</td>
+                <td>
+                    <input type="text" name="cpassword" id="cfmpassword" value="" placeholder="Re-Enter your Password Here" style="width:218px;">
+                    <span id="iscpasswordValid"></span>
                 </td>
             </tr>
             <tr>
                 <td>Gender:</td>
                 <td>
-                    <select style="width:140px;">
+                    <select name = "gender" id="gender" value="" style="width:140px;">
                         <option selected>Select Your Gender</option>
                         <option>Male</option>
                         <option>Female</option>
@@ -58,12 +64,14 @@
                         <option>+1</option>
                         <option>+91</option>
                     </select>
-                    <input type="phone" name="mobile_digits" placeholder="Phone">
+                    <input type="phone" name="mobile_digits" id="mobile" value="" placeholder="Phone">
                 </td>
             </tr>               
         </table>
-        <a href="./login.html" class="button">Register</a>
+        <input type="submit" class="button" value="Register">
         <p>Already have an account? <a href="./loginPage.html">Login Here</a>.</p> 
 </center>
+</form>
+<script src="./app.js"></script>
 </body>
 </html>
