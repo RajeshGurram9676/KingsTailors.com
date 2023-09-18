@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form name="frmRegistration" action="popup.php" method="get" id="frmRegistration" onsubmit=" return validate()">
+    <form name="frmRegistration" action="process.php" method="get" id="frmRegistration" onsubmit="return validate()">
     <h1>Register Here</h1>
     <center>
         <table>
@@ -35,7 +35,7 @@
             <tr>
                 <td>Password:</td>
                 <td>
-                    <input type="text" name="Password" id="password" value="" placeholder="Enter Your Password Here" style="width:218px;">
+                    <input type="text" name="password" id="password" value="" placeholder="Enter Your Password Here" style="width:218px;">
                     <span id="ispasswordValid"></span>
                 </td>
             </tr>
@@ -59,10 +59,20 @@
                 </td>
             </tr>               
         </table>
-        <input type="submit" class="button" value="Register">
-        <p>Already have an account? <a href="./LoginPage.php">Login Here</a>.</p> 
+        <input type="submit" class="button" value="Register"> 
+        <p>Already have an account? <a href="./LoginPage.php">Login Here</a>.</p>
 </center>
 </form>
+<?php
+if (isset($_GET['signup']) && !empty($_GET['signup']))
+{
+    header("Location: popup.php?");
+}
+else
+{
+
+}
+?>
 <script src="./app.js"></script>
 </body>
 </html>

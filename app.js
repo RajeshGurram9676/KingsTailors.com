@@ -150,9 +150,3 @@ function login(){
     return true;
    }
 }
-function openpopup(){
-   popup.classList.add("open-popup");
-}
-function loginpage(){
-   window.location.href = "./LoginPage.php";
-}
