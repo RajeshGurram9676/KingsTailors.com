@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Login Here</h1>
-    <form name="frmRegistration" action="./HomePage.html" method="get" id="frmRegistration" onsubmit=" return login()">
+    <form name="frmRegistration" action="./HomePage.php" method="get" id="frmRegistration" onsubmit=" return login()">
     <center>
         <table>
             <tr>
@@ -29,7 +29,7 @@
         </tr> 
     </table>
     <input type="submit" class="button" value="Login">
-        <p>Don't have an account? <a href="./Register.html">Register Here</a>.</p>
+        <p>Don't have an account? <a href="./Register.php">Register Here</a>.</p>
 </center>
 </form>
 <script src="./app.js"></script>

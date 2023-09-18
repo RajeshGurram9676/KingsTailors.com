@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form name="frmRegistration" action="popup.html" method="get" id="frmRegistration" onsubmit=" return validate()">
+    <form name="frmRegistration" action="popup.php" method="get" id="frmRegistration" onsubmit=" return validate()">
     <h1>Register Here</h1>
     <center>
         <table>
@@ -60,7 +60,7 @@
             </tr>               
         </table>
         <input type="submit" class="button" value="Register">
-        <p>Already have an account? <a href="./loginPage.html">Login Here</a>.</p> 
+        <p>Already have an account? <a href="./LoginPage.php">Login Here</a>.</p> 
 </center>
 </form>
 <script src="./app.js"></script>

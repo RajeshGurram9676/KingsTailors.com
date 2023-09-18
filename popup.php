@@ -11,7 +11,7 @@
     <div class = "popup" id="popup">
         <h2>Thank You!</h2>
         <p>Your Details Have Been Registered Successfully!</p><br>
-        <p>PLease Login</p><br>
+        <p>Please Login</p><br>
         <button class = "popupbtn" type="button" onclick="loginpage()">Login</button>
     </div>
     <script src="./app.js"></script>

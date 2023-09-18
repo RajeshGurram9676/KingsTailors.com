@@ -55,6 +55,12 @@ function validate()
     document.getElementById("ispasswordValid").innerHTML = "&#x2716; Pease Enter Your Password";
     document.getElementById("ispasswordValid").style.color = "red";
    }
+   else if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/.test(document.getElementById("password").value) == false)
+   {
+      ispasswordValid = false;
+      document.getElementById("ispasswordValid").innerHTML = "&#x2716; The password contains at least 6 characters, one lower case, one upper case letter, and one digit.";
+      document.getElementById("ispasswordValid").style.color = "red";
+   }
    else
    {
     ispasswordValid = true;
@@ -148,5 +154,5 @@ function openpopup(){
    popup.classList.add("open-popup");
 }
 function loginpage(){
-   window.location.href = "./LoginPage.html";
+   window.location.href = "./LoginPage.php";
 }
