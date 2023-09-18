@@ -13,14 +13,39 @@ h1{
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        cursor: pointer;
         background-color: #2d835b;
         border: none;
         color: #fff;
         padding: 8px 120px;
         margin: 15px 2px;
         cursor: pointer;
+        
     }
     p {margin: 1px;
         font-size: 15px;
     }
+.popup{
+    width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    visibility: visible;
+    transition: transform 0.4s,top 0.4s;
+}
+.popupbtn {
+    text-align: center;
+    border-radius: 9px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #2d835b;
+    border: none;
+    color: #fff;
+    padding: 8px 70px;
+    cursor: pointer;
+}

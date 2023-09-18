@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form name="frmRegistration" action="./HomePage.html" method="get" id="frmRegistration" onsubmit=" return validate()">
+    <form name="frmRegistration" action="popup.html" method="get" id="frmRegistration" onsubmit=" return validate()">
     <h1>Register Here</h1>
     <center>
         <table>
@@ -28,7 +28,7 @@
             <tr>
                 <td>Email:</td>
                 <td>
-                    <input type="Email" name="email" id="email" value="" placeholder="Enter Your Email Here" style="width:218px;">
+                    <input type="text" name="email" id="email" value="" placeholder="Enter Your Email Here" style="width:218px;">
                     <span id="isemailValid"></span>
                 </td>
             </tr>
@@ -42,19 +42,9 @@
             <tr>
                 <td>Confirm Password:</td>
                 <td>
-                    <input type="text" name="cpassword" id="cfmpassword" value="" placeholder="Re-Enter your Password Here" style="width:218px;">
-                    <span id="iscpasswordValid"></span>
-                </td>
-            </tr>
-            <tr>
-                <td>Gender:</td>
-                <td>
-                    <select name = "gender" id="gender" value="" style="width:140px;">
-                        <option selected>Select Your Gender</option>
-                        <option>Male</option>
-                        <option>Female</option>
-                        <option>Others</option>
-                    </select>
+                    <input type="text" name="cfmpassword" id="cfmpassword" value="" placeholder="Re-Enter your Password Here" style="width:218px;">
+                    <span id="iscfmpasswordValid"></span>
+                    <span id="isalertpasswordValid"></span>
                 </td>
             </tr>
             <tr>
@@ -64,7 +54,8 @@
                         <option>+1</option>
                         <option>+91</option>
                     </select>
-                    <input type="phone" name="mobile_digits" id="mobile" value="" placeholder="Phone">
+                    <input type="phone" name="mobile" id="mobile" value="" placeholder="Phone">
+                    <span id="ismobileValid"></span>
                 </td>
             </tr>               
         </table>
