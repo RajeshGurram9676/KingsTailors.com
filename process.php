@@ -64,7 +64,7 @@
         }
         else
         {
-            header("Location: Register.php?signup=successful");
+            header("Location: register1.php?signup=successful");
         }
 
         $isConnectionClosed = mysqli_close($connection);

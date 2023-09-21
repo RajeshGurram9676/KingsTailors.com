@@ -55,11 +55,11 @@
 
         if(mysqli_num_rows($result) == 1)
         {
-            header("Location: HomePage.php?");
+            header("Location: homepage.php?");
         }
         else
         {
-            header("Location: LoginPage.php?login=failed");
+            header("Location: loginpage1.php?login=failed");
         }
 
         $isConnectionClosed = mysqli_close($connection);
